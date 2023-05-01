@@ -1,0 +1,12 @@
+build:
+ denisags:  # cambiar por su namespace de okteto
+   image: okteto.dev/denisags:latest  # cambiar por su namespace de okteto
+
+deploy:
+ - okteto build # build the image with the latest code
+ - kubectl apply -f manifests # create all the resources in kubernetes
+dev:
+ denisags:
+   command: bash
+   sync:
+   - .:/ApiRestTesina   # cambiar por su proyecto
