@@ -13,8 +13,8 @@ spec:
         app: denisags
     spec:
       containers:
-      - image: okteto.dev/denisags:latest
-        name: denisags
+      - image: okteto.dev/santos-denisags:latest
+        name: santos-denisags
         envFrom:
         - configMapRef:
             name: denisags-config
