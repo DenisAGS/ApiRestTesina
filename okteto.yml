@@ -1,6 +1,6 @@
 build:
- denisags:  # cambiar por su namespace de okteto
-   image: okteto.dev/denisags:latest  # cambiar por su namespace de okteto
+ santos-denisags:  # cambiar por su namespace de okteto
+   image: okteto.dev/santos-denisags:latest  # cambiar por su namespace de okteto
 
 deploy:
  - okteto build # build the image with the latest code
