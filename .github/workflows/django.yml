@@ -51,5 +51,5 @@ jobs:
     - name: Deploy
       uses: okteto/pipeline@2.7.0
       with:
-        name: denisags # cambiar por su namespace
+        name: santos-denisags # cambiar por su namespace
         timeout: 5m
