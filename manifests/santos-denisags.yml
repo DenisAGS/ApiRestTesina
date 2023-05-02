@@ -29,7 +29,7 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: denisags
+  name: santos-denisags
   annotations:
     dev.okteto.com/auto-ingress: "true"
 spec:
