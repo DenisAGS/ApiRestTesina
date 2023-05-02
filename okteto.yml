@@ -9,4 +9,4 @@ dev:
  denisags:
    command: bash
    sync:
-   - .:/ApiRestTesina   # cambiar por su proyecto
+   - .:/cars   # cambiar por su proyecto
