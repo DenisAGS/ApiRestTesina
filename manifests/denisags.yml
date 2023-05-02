@@ -1,23 +1,23 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: denisags
+  name: santos-denisags
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: denisags
+      app: santos-denisags
   template:
     metadata:
       labels:
-        app: denisags
+        app: santos-denisags
     spec:
       containers:
       - image: okteto.dev/santos-denisags:latest
         name: santos-denisags
         envFrom:
         - configMapRef:
-            name: denisags-config
+            name: santos-denisags-config
         livenessProbe:
           httpGet:
             path: /ht/
@@ -35,7 +35,7 @@ metadata:
 spec:
   type: ClusterIP  
   ports:
-  - name: "denisags"
+  - name: "santos-denisags"
     port: 8080
   selector:
-    app: denisags
+    app: santos-denisags
